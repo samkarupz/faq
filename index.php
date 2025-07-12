@@ -68,7 +68,7 @@ $faqs = $stmt->fetchAll();
         <?php foreach ($faqs as $faq): ?>
             <div class="faq" data-id="<?= $faq['id'] ?>">
                 <h3><?= htmlspecialchars($faq['title']) ?></h3>
-                <p><?= nl2br(htmlspecialchars(substr($faq['content'], 0, 150))) ?>...</p>
+                <p><?= nl2br(htmlspecialchars($faq['content'])) ?></p>
                 <p>Likes: <span class="like-count" id=faq-<?= $faq['id'] ?>><?= $faq['likes_count'] ?></span></p>
                 <button class="like-btn" onclick="likeFAQ(<?= $faq['id'] ?>)">Like</button>
             </div>
