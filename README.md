@@ -16,8 +16,13 @@
     mysql -u root -p < db.sql
 
 3. Start the PHP server
+
 4. Open the webpage http://localhost:8080/faq/
 
 
 Project Structure:
-index.php -- PDO Connection, API to handle likes and frontend
+    index.php -- PDO Connection, API to handle likes and frontend
+
+Project Discription:
+    FAQ is a single-page web application that lists all FAQs and their answers along with a like count.
+    Each item includes a like button, and the like count increases automatically when a user clicks it.
